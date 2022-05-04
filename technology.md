@@ -7,10 +7,10 @@ Slack Group Direct Message, Google Docs for drafting answers/responses to questi
 Pandas for cleaning data and EDA and Tableau for analysis/visualization.
 
 ## Database Storage
-Postgres/pgAdmin for storing DB.
+Postgres/pgAdmin for managing DB and an AWS S3 Bucket for storage of the dataset.
 
 ## Machine Learning
-ScikitLearn
+Combination of Scikit-Learn, SciPy, Keras, and TensorFlow.
 
 ## Dashboard
 Flask and D3.js. Dashboard will be hosted on Github Pages.
