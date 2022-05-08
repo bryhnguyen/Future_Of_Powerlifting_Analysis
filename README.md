@@ -11,7 +11,7 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 ## Questions we hope to answer with the data
 - How much does the average Wilks Score of the top powerlifters increase each year? 
 - Will the performance of these athletes plateau at some point?
-- Which variables have the most significant impact on the predicted outcome?
+- Is there bias in the Wilks Score formula, and if so, what other formulas could be used instead?
 
 # Technology Used
 
