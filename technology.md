@@ -4,13 +4,13 @@
 Slack Group Direct Message, Google Docs for drafting answers/responses to questions from rubric and stated goals, and Google Slides for presentation.
 
 ## Data Cleaning and Analysis
-Pandas for cleaning data and EDA and Tableau for analysis/visualization.
+Pandas for cleaning data and EDA and Tableau for analysis/visualization. Python will also be used for EDA.
 
 ## Database Storage
-Postgres/pgAdmin for managing DB and an AWS S3 Bucket for storage of the dataset.
+Postgres/pgAdmin for managing the DB and an AWS S3 Bucket for storage of the dataset. Excel will also be used initially to create a mock database.
 
 ## Machine Learning
-Combination of Scikit-Learn, SciPy, Keras, and TensorFlow.
+A combination of Scikit-Learn, SciPy, Keras, and TensorFlow will be used in some capacity. Using supervised ML, we will apply Linear Regression to the dataset for training and testing purposes.
 
 ## Dashboard
-Flask and D3.js. Dashboard will be hosted on Github Pages.
+A Flask template and D3.js. The finalized Dashboard will be deployed on Github Pages.
