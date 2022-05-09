@@ -1,4 +1,4 @@
-# Mass_Strength_Analysis
+# Future_Of_Powerlifting_Analysis
 
 ## Topic  
 Analysis of a powerlifting dataset where historical progression of world class powerlifters will be tracked in order to predict future performance, based on Wilks Scores (an aggregate calculation that combines gender, bodyweight, and best lift from each of the three powerlifting categories: squat, bench, and deadlift).
