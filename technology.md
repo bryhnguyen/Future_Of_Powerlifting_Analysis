@@ -13,4 +13,4 @@ Postgres/pgAdmin for managing the DB and an AWS S3 Bucket for storage of the dat
 A combination of Scikit-Learn, SciPy, Keras, and TensorFlow will be used in some capacity. Using supervised ML, we will apply Linear Regression to the dataset for training and testing purposes.
 
 ## Dashboard
-A Flask template and D3.js. The finalized Dashboard will be deployed on Github Pages.
+Tableau will be used to create the dashboard. A link to the Tableau dashboard will be found at the top of the README.
