@@ -20,7 +20,7 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 Slack Group Direct Message, Google Docs for drafting answers/responses to questions from rubric and stated goals, and Google Slides for presentation.
 
 ## Data Cleaning and Analysis
-Pandas for cleaning data and EDA and Tableau for analysis/visualization. Python will also be used for EDA.
+Pandas for cleaning data and EDA and Excel was used this time to produce draft visualizations, but Tableau will be used in the future. Python will also be used for EDA.
 
 ## Database Storage
 Postgres/pgAdmin for managing the DB and an AWS S3 Bucket for storage of the dataset. Excel will also be used initially to create a mock database.
