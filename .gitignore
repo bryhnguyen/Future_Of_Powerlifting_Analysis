@@ -1,3 +1,8 @@
+# Added files
+technology.md
+Machine_Learning_Model/Test.csv
+Resources/openpowerlifting.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
