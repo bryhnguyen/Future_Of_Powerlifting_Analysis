@@ -1,8 +1,5 @@
 # Technologies Used
 
-## Communication
-Slack Group Direct Message, Google Docs for drafting answers/responses to questions from rubric and stated goals, and Google Slides for presentation.
-
 ## Data Cleaning and Analysis
 Pandas for cleaning data and EDA and Tableau for analysis/visualization. Python will also be used for EDA.
 
