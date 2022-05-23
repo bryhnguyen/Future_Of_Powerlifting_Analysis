@@ -4,6 +4,8 @@ Presentation Draft: [Link](https://docs.google.com/presentation/d/110ar9MJyL7VZz
 
 Dashboard Draft: [Link](https://docs.google.com/presentation/d/1ADHR1QWhtA9Bc03uDD5qhBo7okVpN69lQsGGj_NB6TU/edit?usp=sharing)
 
+Dashboard (WIP): [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysis_16532450321420/Dashboard1?publish=yes)
+
 ## Topic  
 Analysis of a powerlifting dataset where historical progression of world class powerlifters will be tracked in order to predict future performance, based on Wilks Scores (an aggregate calculation that combines gender, bodyweight, and best lift from each of the three powerlifting categories: squat, bench, and deadlift).
 
@@ -30,19 +32,24 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 - For our analysis, we are using only Sex, Age, Best3BenchKg, Best3SquatKg, Best3DeadliftKg, and Date as the features and TotalKg as the target.
 - Because the dataset we are using is continuous, we are using linear regression as our supervised learning model. If we were looking for categorical and discrete results, we would use logistic regression instead.
 
+## Description of Testing & Quality Assurance
+- All code used for ETL, creating the database, and the data modeling process has been tested and confirmed operable.
+- The connection string that allows our code to query and extract data from the database has been tested and confirmed operable.
+- Datatypes for the relevant columns extracted from our dataset have been confirmed to either already meet our needs and expectations or have been appropriately converted.
+- Filters have been correctly applied to the data used in the data modeling process, such that the inputs and target only include relevant data that we preselected (E.g. only records for competitors 18 or older who earned 1st place in squat, bench, or deadlift competitions were examined).
+- Predicted data that was produced by the model has been correctly loaded into a dataframe for final analysis.
+- Initially, we attempted to use the balanced_accuracy_score package from Scikit-learn to produce an accuracy score for our model. We eventually realized this was a mistake because this is to be used as a classification metric and not for a regression problem. Thus, we decided to use the R-Squared (R2) score instead, which has been confirmed to produce a relevant accuracy score for our model.
+
 # Technology Used
 
-## Communication
-Slack Group Direct Message, Google Docs for drafting answers/responses to questions from rubric and stated goals, and Google Slides for presentation.
-
 ## Data Cleaning and Analysis
-Pandas for cleaning data and EDA and Excel was used this time to produce draft visualizations, but Tableau will be used in the future. Python will also be used for EDA.
+Python and Pandas for cleaning data and exploratory data analysis. Excel was used initially to produce draft visualizations.
 
 ## Database Storage
-Postgres/pgAdmin for managing the DB and an AWS S3 Bucket for storage of the dataset. Excel will also be used initially to create a mock database.
+PostgreSQL and pgAdmin for initially creating and managing the database, and AWS Relational Database Service for storage of the database, which was initially extracted from a CSV file. Psycopg2 was used to connect our model to the database. Excel was also used initially to create a mock database.
 
 ## Machine Learning
-A combination of Scikit-Learn, SciPy, Keras, and TensorFlow will be used in some capacity. Using supervised ML, we will apply Linear Regression to the dataset for training and testing purposes.
+Scikit-learn packages, including LinearRegression, R2 Score, and train_test_split, were used to create and train the model. Linear Regression (supervised machine learning) was applied to the data to produce predictions.
 
 ## Dashboard
-Tableau will be used to create the dashboard. A link to the Tableau dashboard will be found at the top of the README.
+Tableau was used to create the dashboard. A link to the Tableau dashboard will be found at the top of the project's README.
