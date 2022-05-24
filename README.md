@@ -16,9 +16,9 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 “This dataset is a snapshot of the OpenPowerlifting database as of April 2019. OpenPowerlifting is creating a public-domain archive of powerlifting history. Powerlifting is a sport in which competitors compete to lift the most weight for their class in three separate barbell lifts: the Squat, Bench, and Deadlift.” (openpowerlifting.org/)
 
 ## Questions we hope to answer with the data
-- How much does the average Wilks Score of the top powerlifters increase each year? 
+- Is there an increase in performance year-after-year? 
 - Will the performance of these athletes plateau at some point?
-- Is there bias in the Wilks Score formula, and if so, what other formulas could be used instead?
+- What is the importance of the athlete's age in powerlifting in regards to how much they can lift?
 
 ## Description of Data Exploration Phase
 - In a Jupyter Notebook, Pandas was used to load the dataset into a DataFrame and the datatypes of the columns were ascertained using “dtypes”.
@@ -58,7 +58,7 @@ Python and Pandas for cleaning data and exploratory data analysis. Excel was use
 PostgreSQL and pgAdmin for initially creating and managing the database, and AWS Relational Database Service for storage of the database, which was initially extracted from a CSV file. Psycopg2 was used to connect our model to the database. Excel was also used initially to create a mock database.
 
 ## Machine Learning
-Scikit-learn packages, including LinearRegression, R2 Score, and train_test_split, were used to create and train the model. Linear Regression (supervised machine learning) was applied to the data to produce predictions.
+Scikit-learn packages, including LinearRegression, R2 Score, and train_test_split, were used to create and train the model. Linear Regression (supervised machine learning) was applied to the data to produce predictions. NumPy was used to create IDs for each row in the created dataset. The model was connected to the database using Psycopg 2, a PostgreSQL database adapter for Python. 
 
 ## Dashboard
 Tableau was used to create the dashboard. A link to the Tableau dashboard will be found at the top of the project's README.
