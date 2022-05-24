@@ -4,7 +4,7 @@ Presentation Draft: [Link](https://docs.google.com/presentation/d/110ar9MJyL7VZz
 
 Dashboard Draft: [Link](https://docs.google.com/presentation/d/1ADHR1QWhtA9Bc03uDD5qhBo7okVpN69lQsGGj_NB6TU/edit?usp=sharing)
 
-Dashboard (WIP): [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysis_16532450321420/Dashboard1?publish=yes)
+Dashboard (WIP): [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysisdarkmode/Dashboard2)
 
 ## Topic  
 Analysis of a powerlifting dataset where historical progression of world class powerlifters will be tracked in order to predict future performance, based on Wilks Scores (an aggregate calculation that combines gender, bodyweight, and best lift from each of the three powerlifting categories: squat, bench, and deadlift).
