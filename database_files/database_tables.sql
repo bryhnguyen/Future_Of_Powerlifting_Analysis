@@ -12,8 +12,9 @@ CREATE TABLE demographic (
 	Age VARCHAR(5) NOT NULL,
 	sex VARCHAR(1) NOT NULL,
 	Place VARCHAR(1)  NOT NULL,
-	meet_date VARCHAR(40) NOT NULL,
-	PRIMARY KEY (competitor_id)
+	meet_date VARCHAR(10) NOT NULL,
+	PRIMARY KEY (meet_date)
+	FOREIGN KEY (competitor_id) REFERENCES competitor (competitor_id),
 );
 --Creating total kg table
 CREATE TABLE Totalkg (
@@ -24,17 +25,18 @@ CREATE TABLE Totalkg (
 	Best3DeadliftKg INT NOT NULL,
 	Totalkg INT NOT NULL,
 	wilks_score INT NOT NULL,
-	PRIMARY KEY (competitor_id)
+	PRIMARY KEY (wilks_score)
+	FOREIGN KEY (competitor_id) REFERENCES competitor (competitor_id),
 );
 --Creating performance table
 CREATE TABLE performance (
 	performance_id VARCHAR(40) NOT NULL,
 	competitor_id VARCHAR(40) NOT NULL,
 	meet_id VARCHAR(40) NOT NULL,
-	wilks_score VARCHAR,
+	wilks_score INT NOT NULL,
 	PRIMARY KEY (performance_id),
 	FOREIGN KEY (competitor_id) REFERENCES competitor (competitor_id),
-	FOREIGN KEY (meet_id) REFERENCES meet (meet_id)
+	FOREIGN KEY (wilks_score) REFERENCES TotalKg (wilks_score)
 
 );
 
@@ -42,9 +44,10 @@ CREATE TABLE performance (
 CREATE TABLE meet (
 	meet_id VARCHAR(40) NOT NULL,
 	meet_name VARCHAR(40) NOT NULL,
-	meet_date VARCHAR(40) NOT NULL,
+	meet_date VARCHAR(10) NOT NULL,
 	meet_country VARCHAR(40), 
 	PRIMARY KEY (meet_id)
+	FOREIGN KEY (meet_date) REFERENCES demographic (meet_date),
 );
 
 -- Joining totalkg and demographics tables to project df
