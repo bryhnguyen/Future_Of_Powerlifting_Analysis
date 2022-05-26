@@ -18,7 +18,7 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 ## Questions we hope to answer with the data
 - Is there an increase in performance year-after-year? 
 - Will the performance of these athletes plateau at some point?
-- What is the importance of the athlete's age in powerlifting in regards to how much they can lift?
+- What is the importance of the athlete's age and bodyweight in powerlifting in regards to how much they can lift?
 
 ## Description of Data Exploration Phase
 - In a Jupyter Notebook, Pandas was used to load the dataset into a DataFrame and the datatypes of the columns were ascertained using “dtypes”.
