@@ -21,6 +21,8 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 - Is there bias in the Wilks Score formula, and if so, what other formulas could be used instead?
 
 ## Description of Data Exploration Phase
+- The data obtained from Openpowerlifting was stored in an AWS bucket. Using PySpark, we read the file into a dataframe and stored the needed dataframes in Postgres SQL.  
+
 - In a Jupyter Notebook, Pandas was used to load the dataset into a DataFrame and the datatypes of the columns were ascertained using “dtypes”.
 - Some columns, such as ‘Place’ and ‘Date’ needed to be formatted correctly so that they could be used in the model.
 - Since we are only interested in the columns Sex, Age, Best3BenchKg, Best3SquatKg, Best3DeadliftKg, and Date as features, with TotalKg as the target, the rest of the columns were dropped.
@@ -33,7 +35,7 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 - Because the dataset we are using is continuous, we are using linear regression as our supervised learning model. If we were looking for categorical and discrete results, we would use logistic regression instead.
 
 ## Description of Machine Learning Process
-- Preprocessing: The dataset used was found through Kaggle and had already been somewhat structured and suitable for our needs. However, the “place” column was filtered to only include records for competitors who achieved 1st place, “event” was filtered for “SBD” (squat, bench, & deadlift), and “age” was filtered for 18+. The “meet_date” column was also converted to a unified format using Pandas’ “to_datetime” function, “sex” was converted to a binary category (‘0’ for female, ‘1’ for male), and the “competitor_id” column was renamed “ID”.
+- Preprocessing: The dataset used was found through OpenPowerlifitng and stored in SQL, had already been somewhat structured and suitable for our needs. However, the “place” column was filtered to only include records for competitors who achieved 1st place, “event” was filtered for “SBD” (squat, bench, & deadlift), and “age” was filtered for 18+. The “meet_date” column was also converted to a unified format using Pandas’ “to_datetime” function, “sex” was converted to a binary category (‘0’ for female, ‘1’ for male), and the “competitor_id” column was renamed “ID”.
 - Feature Engineering & Selection: The features we selected were “sex” (gender), “age”, “best3squatkg”, “best3benchkg”, “best3deadliftkg” (highest kg lifted for each competitor in each category), “bodyweightkg” (competitor’s bodyweight), and “meet_date” (date of competition). The target used was “totalkg” (sum total of kilograms lifted by competitor). The overall goal in selecting these features was to be able to predict future increases or decreases in “totalkg” based on historical achievements in ‘SBD’ and to measure the effects of the selected features on said predictions. Ultimately, the goal was to create a snapshot of the future of the powerlifting sport.
 - Splitting the Data into Training & Testing: Training and testing data was created using Scikit-learn’s train_test_split function.
 - Model Choice: The LinearRegression model from Scikit-learn was chosen because it best fit our dataset, which contained continuous, numerical values. One potential problem will be that our model will not be able to completely account for all realistic limitations on human strength, and thus the predicted values will likely not be truly realistic.
