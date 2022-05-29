@@ -15,10 +15,13 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 ## Description of the data source
 “This dataset is a snapshot of the OpenPowerlifting database as of April 2019. OpenPowerlifting is creating a public-domain archive of powerlifting history. Powerlifting is a sport in which competitors compete to lift the most weight for their class in three separate barbell lifts: the Squat, Bench, and Deadlift.” (openpowerlifting.org/)
 
+![image](https://user-images.githubusercontent.com/95376544/170395993-2c01f6aa-1c50-4df9-b21a-5164bdc5927a.png)
+(Screenshot from https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database)
+
 ## Questions we hope to answer with the data
-- How much does the average Wilks Score of the top powerlifters increase each year? 
+- Is there an increase in performance year-after-year? 
 - Will the performance of these athletes plateau at some point?
-- Is there bias in the Wilks Score formula, and if so, what other formulas could be used instead?
+- What is the importance of the athlete's age and bodyweight in powerlifting in regards to how much they can lift?
 
 ## Description of Data Exploration Phase
 - The data obtained from Openpowerlifting was stored in an AWS bucket. Using PySpark, we read the file into a dataframe and stored the needed dataframes in Postgres SQL.  
@@ -28,6 +31,9 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 - Since we are only interested in the columns Sex, Age, Best3BenchKg, Best3SquatKg, Best3DeadliftKg, and Date as features, with TotalKg as the target, the rest of the columns were dropped.
 - We filtered the ‘Place’ column for values equal to ‘1’, the ‘Event’ column for values equal to ‘SBD’ (Squat, Bench, Deadlift), and the ‘Age’ column for values greater than or equal to ‘18’. This allowed us to focus on competitors who are over the age of 18, placed 1st, and had entries for squat, bench, and deadlift.
 - The ‘Sex’ column was converted to a category to represent ‘0’ for females and ‘1’ for males. It was then converted to an integer dtype.
+
+![image](https://user-images.githubusercontent.com/95376544/170396246-819fb11d-4240-4342-923a-988c3650e399.png)
+(Screenshot of datatype conversion within Jupyter Notebook)
 
 ## Description of Analysis Phase
 - We are conducting an analysis on an open-sourced powerlifting dataset to gain insight on the future of the sport by predicting how performance (TotalKg) of competitors will be affected in the future by factors such as Age, Sex, and Bodyweight.
@@ -42,6 +48,9 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 - Changes in Model: No changes were made to the model between the 2nd and 3rd week deliverables.
 - Training the Model: The model was trained to use factors such as a competitor’s age, best squat lift, best bench lift, best deadlift, bodyweight, and gender to predict total kg output for future competitions. Test data was compared to alternative “predictions” of past lifting achievements in order to determine the model’s predictive accuracy.
 - Accuracy Score: To produce an accuracy score, we used Scikit-learn’s r2_score function, which has concluded an accuracy score of 99.55% thus far. Initially, we had selected the balanced_accuracy_score function for our accuracy score testing, but eventually realized that because the balanced_accuracy_score was meant to be used as a classification metric, it would not be suitable for a regression problem.
+
+![image](https://user-images.githubusercontent.com/95376544/170396344-a0908f67-0fb1-4552-845a-1ec0372b953d.png)
+(Screenshot of R2 score calculation once the data was fitted to the model)
 
 ## Description of Testing & Quality Assurance
 - All code used for ETL, creating the database, and the data modeling process has been tested and confirmed operable.
@@ -60,7 +69,10 @@ Python and Pandas for cleaning data and exploratory data analysis. Excel was use
 PostgreSQL and pgAdmin for initially creating and managing the database, and AWS Relational Database Service for storage of the database, which was initially extracted from a CSV file. Psycopg2 was used to connect our model to the database. Excel was also used initially to create a mock database.
 
 ## Machine Learning
-Scikit-learn packages, including LinearRegression, R2 Score, and train_test_split, were used to create and train the model. Linear Regression (supervised machine learning) was applied to the data to produce predictions.
+Scikit-learn packages, including LinearRegression, R2 Score, and train_test_split, were used to create and train the model. Linear Regression (supervised machine learning) was applied to the data to produce predictions. NumPy was used to create IDs for each row in the created dataset. The model was connected to the database using Psycopg 2, a PostgreSQL database adapter for Python. 
 
 ## Dashboard
 Tableau was used to create the dashboard. A link to the Tableau dashboard will be found at the top of the project's README.
+
+![image](https://user-images.githubusercontent.com/95376544/170396509-e530d7c8-85d3-4f72-b0ea-9074cdcb56b5.png)
+(Preview of Tableau Dashboard)
