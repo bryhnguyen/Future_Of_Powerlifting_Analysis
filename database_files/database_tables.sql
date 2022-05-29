@@ -1,4 +1,4 @@
---Creating competitor table
+--Creating competitor table--
 CREATE TABLE competitor (
 	competitor_id VARCHAR(40) NOT NULL,
 	competitor_name VARCHAR(40) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE competitor (
 	PRIMARY KEY (competitor_id)
 );
 
--- Creating demographics table
+-- Creating demographic table--
 CREATE TABLE demographic (
 	competitor_id VARCHAR(40) NOT NULL,
 	Age INT NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE demographic (
 	PRIMARY KEY (competitor_id),
 	FOREIGN KEY (competitor_id) REFERENCES competitor (competitor_id)
 );
---Creating total kg table
+--Creating total kg table--
 CREATE TABLE Totalkg (
 	competitor_id VARCHAR(40) NOT NULL,
 	BodyWeightKg INT NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE Totalkg (
 	PRIMARY KEY (competitor_id),
     FOREIGN KEY (competitor_id) REFERENCES competitor (competitor_id)
 );
---Creating performance table
+--Creating performance table--
 CREATE TABLE performance (
 	performance_id VARCHAR(40) NOT NULL,
 	competitor_id VARCHAR(40) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE performance (
 
 );
 
---Creating meet table
+--Creating meet table--
 CREATE TABLE meet (
 	meet_id VARCHAR(40) NOT NULL,
 	meet_name VARCHAR(200) NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE meet (
 );
 
 
--- Joining totalkg and demographics tables to project df
+-- Joining totalkg and demographics tables to project df-- Left Join in SQL
 CREATE TABLE project_df AS SELECT demographic.competitor_id,
      demographic.sex,
 	 demographic.Age,
