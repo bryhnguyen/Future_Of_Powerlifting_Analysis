@@ -1,4 +1,12 @@
+# Added files
+technology.md
+Machine_Learning_Model/Test.csv
+Resources/openpowerlifting.csv
+Powerlifting_Future_ML_ERD.PNG 
+
+
 # Byte-compiled / optimized / DLL files
+.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
