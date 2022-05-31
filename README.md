@@ -4,6 +4,8 @@ Slideshow Presentation: [Link](https://docs.google.com/presentation/d/110ar9MJyL
 
 Speaker Notes: [Link](https://docs.google.com/document/d/1axPjQrbFPo_KmnWXgIdj64aFNCwE1pa7vckhahPhZZI/edit?usp=sharing)
 
+Dashboard/Story: [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingStory_16538458108750/Story2?publish=yes)
+
 Dashboard Draft: [Link](https://docs.google.com/presentation/d/1ADHR1QWhtA9Bc03uDD5qhBo7okVpN69lQsGGj_NB6TU/edit?usp=sharing)
 
 
