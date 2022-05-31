@@ -1,10 +1,12 @@
 # Future_Of_Powerlifting_Analysis
 
-Presentation Draft: [Link](https://docs.google.com/presentation/d/110ar9MJyL7VZzJPCfjMCoU1sGFIUQ4SeMalfpz2DMkQ/edit?usp=sharing)
+Slideshow Presentation: [Link](https://docs.google.com/presentation/d/110ar9MJyL7VZzJPCfjMCoU1sGFIUQ4SeMalfpz2DMkQ/edit?usp=sharing)
+
+Speaker Notes: [Link](https://docs.google.com/document/d/1axPjQrbFPo_KmnWXgIdj64aFNCwE1pa7vckhahPhZZI/edit?usp=sharing)
 
 Dashboard Draft: [Link](https://docs.google.com/presentation/d/1ADHR1QWhtA9Bc03uDD5qhBo7okVpN69lQsGGj_NB6TU/edit?usp=sharing)
 
-Dashboard (WIP): [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysisdarkmode/Dashboard2)
+
 
 ## Topic  
 Analysis of a powerlifting dataset where historical progression of world class powerlifters will be tracked in order to predict future performance, based on Wilks Scores (an aggregate calculation that combines gender, bodyweight, and best lift from each of the three powerlifting categories: squat, bench, and deadlift).
