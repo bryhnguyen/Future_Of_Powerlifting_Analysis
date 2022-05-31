@@ -63,7 +63,7 @@ To create a snapshot of the future of the powerlifting sport and performance exp
 # Technology Used
 
 ## Data Cleaning and Analysis
-Python and Pandas for cleaning data and exploratory data analysis. Excel was used initially to produce draft visualizations.
+Python, PySpark and Pandas for cleaning data and exploratory data analysis. Excel was used initially to produce draft visualizations.
 
 ## Database Storage
 PostgreSQL and pgAdmin for initially creating and managing the database, and AWS Relational Database Service for storage of the database, which was initially extracted from a CSV file. Psycopg2 was used to connect our model to the database. Excel was also used initially to create a mock database.
