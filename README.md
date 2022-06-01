@@ -2,13 +2,13 @@
 
 ## Project Links
 
-Slideshow Presentation: [Link](https://docs.google.com/presentation/d/110ar9MJyL7VZzJPCfjMCoU1sGFIUQ4SeMalfpz2DMkQ/edit?usp=sharing)
+[Slideshow Presentation](https://docs.google.com/presentation/d/110ar9MJyL7VZzJPCfjMCoU1sGFIUQ4SeMalfpz2DMkQ/edit?usp=sharing)
 
-Speaker Notes: [Link](https://docs.google.com/document/d/1axPjQrbFPo_KmnWXgIdj64aFNCwE1pa7vckhahPhZZI/edit?usp=sharing)
+[Speaker Notes](https://docs.google.com/document/d/1axPjQrbFPo_KmnWXgIdj64aFNCwE1pa7vckhahPhZZI/edit?usp=sharing)
 
-Data Story: [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingStory_16538458108750/Story2?publish=yes)
+[Data Story](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingStory_16538458108750/Story2?publish=yes)
 
-Dashboard: [Link](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysisdarkmode/Dashboard2)
+[Dashboard](https://public.tableau.com/app/profile/juan.de.haro/viz/PowerliftingAnalysisdarkmode/Dashboard2)
 
 ## Topic  
 We wanted to analyze a powerlifting dataset where historical progression of world class powerlifters were tracked, which would allow us to potentially predict future performance, based on a combination of factors, including bodyweight, age, gender, and best lift from each of the three powerlifting categories: squat, bench, and deadlift.
