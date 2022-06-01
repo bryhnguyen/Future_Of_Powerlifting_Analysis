@@ -1,4 +1,4 @@
-# Future_Of_Powerlifting_Analysis
+# The Future of Powerlifting
 
 ## Project Links
 
